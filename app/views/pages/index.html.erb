@@ -1,7 +1,12 @@
 <div ng-app="app">
   <div ng-controller="exampleCtrl">
-    {{ message }}
-    <input ng-model="message">
+    <h1>hello</h1>
+    <li ng-repeat="message in messages">{{ message }}
+      <input ng-model="message">
+      <p> {{ message + " is cool!"}} </p>
+
+
+    </li>
 
   </div>
 </div>

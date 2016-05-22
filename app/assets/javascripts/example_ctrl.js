@@ -2,7 +2,7 @@
   "use strict";
   angular.module("app").controller("exampleCtrl", function($scope) {
 
-    $scope.message = "hello world!";
+    $scope.messages = ["hello world!", "Good afternoon", "goodbye"];
 
 
 
