@@ -4,6 +4,9 @@
 
     $scope.messages = ["hello world!", "Good afternoon", "goodbye"];
 
+    $scope.alertMe = function(message) {
+      alert(message);
+    }
 
 
   });
