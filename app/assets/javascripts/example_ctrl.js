@@ -4,10 +4,12 @@
 
     $scope.messages = ["hello world!", "Good afternoon", "goodbye"];
 
-    $scope.alertMe = function(message) {
-      alert(message);
+    $scope.addMessage = function(message) {
+      $scope.messages.push(message);
     }
 
 
+
+    window.$scope = $scope;
   });
 })();
