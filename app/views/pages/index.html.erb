@@ -1,13 +1,10 @@
 <div ng-app="app">
   <div ng-controller="exampleCtrl">
-    <h1>hello</h1>
-    <li ng-repeat="message in messages" ng-click="alertMe(message)">{{ message }}
+    <h1>Angular Reviews</h1>
+    <li ng-repeat="review in reviews" ng-click="alertMe(review)">{{ review.text }} {{ review.rating}}</li>
 
-
-
-    </li>
-
-      <input ng-model="newMessage">
-      <button ng-click="addMessage(newMessage)">Add Message</button>
+      <input ng-model="newReview">
+      <input ng-model="newRating">
+      <button ng-click="addReview(newReview, newRating)">Add Review</button>
   </div>
 </div>
